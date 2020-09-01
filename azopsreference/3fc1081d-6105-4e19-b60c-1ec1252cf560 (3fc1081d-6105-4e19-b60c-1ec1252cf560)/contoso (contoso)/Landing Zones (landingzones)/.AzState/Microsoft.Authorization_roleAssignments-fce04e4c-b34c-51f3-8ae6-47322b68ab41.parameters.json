@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/roleAssignments/fce04e4c-b34c-51f3-8ae6-47322b68ab41",
+        "Name": "fce04e4c-b34c-51f3-8ae6-47322b68ab41",
+        "properties": {
+          "DisplayName": "Deny-PublicEndpoints",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "87bdb724-c99d-49de-90ea-745b3cfc250b",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

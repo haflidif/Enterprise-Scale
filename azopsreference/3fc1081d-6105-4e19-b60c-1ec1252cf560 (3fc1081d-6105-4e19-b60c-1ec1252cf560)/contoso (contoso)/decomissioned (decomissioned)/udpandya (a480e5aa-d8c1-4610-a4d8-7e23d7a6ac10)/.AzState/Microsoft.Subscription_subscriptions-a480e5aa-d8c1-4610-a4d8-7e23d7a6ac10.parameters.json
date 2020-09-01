@@ -1,0 +1,326 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10",
+        "Name": "a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10",
+        "DisplayName": "udpandya",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/d8e99653-5de4-0743-b287-312b419ba48b",
+              "Name": "d8e99653-5de4-0743-b287-312b419ba48b",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "a786d489-7b7e-4e6a-8508-771443e29bc5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+                "RoleDefinitionName": "SQL Security Manager"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/5961ceef-9c2a-c9e2-d119-05bb7b6bebd9",
+              "Name": "5961ceef-9c2a-c9e2-d119-05bb7b6bebd9",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ad648448-5913-4779-8a0b-4336fbcd3291",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+                "RoleDefinitionName": "SQL Security Manager"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/b6788afe-2a85-c1ae-9765-2925c563082c",
+              "Name": "b6788afe-2a85-c1ae-9765-2925c563082c",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "de36f90b-72d9-4960-bfbf-2335a5f3b491",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+                "RoleDefinitionName": "SQL Security Manager"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/10dd1df7-d45c-ac8f-1a16-8d39e439b521",
+              "Name": "10dd1df7-d45c-ac8f-1a16-8d39e439b521",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ab8dbc03-a0b9-4a60-8383-820dcfa8a0eb",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab",
+                "RoleDefinitionName": "Storage Account Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/1e7ed008-296a-3872-4513-2e586c59a0cb",
+              "Name": "1e7ed008-296a-3872-4513-2e586c59a0cb",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ad648448-5913-4779-8a0b-4336fbcd3291",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab",
+                "RoleDefinitionName": "Storage Account Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/3ef2f57d-d4f7-e587-a680-43b839e38ea6",
+              "Name": "3ef2f57d-d4f7-e587-a680-43b839e38ea6",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "de36f90b-72d9-4960-bfbf-2335a5f3b491",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab",
+                "RoleDefinitionName": "Storage Account Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/117ab102-9299-481b-bca3-8e39ab44e054",
+              "Name": "117ab102-9299-481b-bca3-8e39ab44e054",
+              "properties": {
+                "DisplayName": "udpandya-openshift-csyou",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "b5417865-01f4-456e-b9d5-976ebe550232",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/f2f007ab-458f-4ea6-925a-1dbd13687e7a",
+              "Name": "f2f007ab-458f-4ea6-925a-1dbd13687e7a",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/ace05ecd-e473-4e45-aa2d-f53f87957057",
+              "Name": "ace05ecd-e473-4e45-aa2d-f53f87957057",
+              "properties": {
+                "DisplayName": "cluster-onboarding-spn-2020-02-11-18-04-55",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "f94d5a67-c0ed-460c-949c-b2d2a1111402",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/34e09817-6cbe-4d01-b1a2-e0eac5743d41",
+                "RoleDefinitionName": "Kubernetes Cluster - Azure Arc Onboarding"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/803df77b-835c-b051-f4ef-88fdd9684c1d",
+              "Name": "803df77b-835c-b051-f4ef-88fdd9684c1d",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "a78e186a-5029-44b9-b7eb-df26bf1fad48",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/4d97b98b-1d4f-4787-a291-c67834d212e7",
+                "RoleDefinitionName": "Network Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/7abdff8c-cb1c-2640-54fd-02da76ac38dc",
+              "Name": "7abdff8c-cb1c-2640-54fd-02da76ac38dc",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ab8dbc03-a0b9-4a60-8383-820dcfa8a0eb",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+                "RoleDefinitionName": "Monitoring Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/59c53abe-cbce-465c-af87-9386b3aef880",
+              "Name": "59c53abe-cbce-465c-af87-9386b3aef880",
+              "properties": {
+                "DisplayName": "sub-udpandya-gitops",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "1588850a-f76a-4488-8cd6-558d59c9d3a6",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/76d46780-8712-4a95-f551-ec9364464eab",
+              "Name": "76d46780-8712-4a95-f551-ec9364464eab",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "72043fdb-7cb4-403b-bee3-871ed7fcbdaa",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/a3366858-6ec1-cc9c-36b9-eec3c5ebfb4d",
+              "Name": "a3366858-6ec1-cc9c-36b9-eec3c5ebfb4d",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "8f884296-0728-4b7e-b2dc-ca7787a4740f",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/ecfc6195-325b-dfb4-6ad6-bae5c2ecf787",
+              "Name": "ecfc6195-325b-dfb4-6ad6-bae5c2ecf787",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "9f5ece44-c3af-40be-83fa-d7c1ad3c0327",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/6d4ad2c3-dd4a-25ea-f3c2-7a73db289d8d",
+              "Name": "6d4ad2c3-dd4a-25ea-f3c2-7a73db289d8d",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "d177efa9-e851-402e-b6ce-0759e1b7e28d",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/bbd41b9b-a155-adc3-2599-6010402fd017",
+              "Name": "bbd41b9b-a155-adc3-2599-6010402fd017",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "72043fdb-7cb4-403b-bee3-871ed7fcbdaa",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+                "RoleDefinitionName": "Virtual Machine Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/1f0ee893-efe7-cf52-09d9-70a036dc7d0c",
+              "Name": "1f0ee893-efe7-cf52-09d9-70a036dc7d0c",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "8bf49d23-d187-4424-b821-06bb25aad6e8",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+                "RoleDefinitionName": "Virtual Machine Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/c1748456-6f5b-a252-7616-a3677ee14974",
+              "Name": "c1748456-6f5b-a252-7616-a3677ee14974",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "8f884296-0728-4b7e-b2dc-ca7787a4740f",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+                "RoleDefinitionName": "Virtual Machine Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/72415915-c26c-c0cc-c8fe-5dfa2783cc8b",
+              "Name": "72415915-c26c-c0cc-c8fe-5dfa2783cc8b",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "96730e81-617c-4014-ad0c-91b2fd3dd37b",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9b7fa17d-e63e-47b0-bb0a-15c516ac86ec",
+                "RoleDefinitionName": "SQL DB Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/b889b10a-bc09-45c5-86f0-d53a628b0465",
+              "Name": "b889b10a-bc09-45c5-86f0-d53a628b0465",
+              "properties": {
+                "DisplayName": "Vipul Dudani",
+                "ObjectType": "User",
+                "PrincipalId": "5c2bbe48-1fc1-4710-a452-3baaad1b2b7f",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+                "RoleDefinitionName": "Reader"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/7448e78d-200a-47db-8718-6b6bb409f055",
+              "Name": "7448e78d-200a-47db-8718-6b6bb409f055",
+              "properties": {
+                "DisplayName": "udpandya-openshift-csyou",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "b5417865-01f4-456e-b9d5-976ebe550232",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/d1a6dfc0-69e3-4789-8ba8-b71f756c6d3f",
+              "Name": "d1a6dfc0-69e3-4789-8ba8-b71f756c6d3f",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ea94772b-5305-4ad7-9978-aff4d360ea97",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/5ee6f391-8ddb-386a-ef77-9bc8517c202f",
+              "Name": "5ee6f391-8ddb-386a-ef77-9bc8517c202f",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "c7830724-9cd4-4311-a7f5-0bf106d7a8ab",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/fb1c8493-542b-48eb-b624-b4c8fea62acd",
+                "RoleDefinitionName": "Security Admin"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

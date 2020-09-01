@@ -1,0 +1,561 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b",
+        "Name": "99c2838f-a548-4884-a6e2-38c1f8fb4c0b",
+        "DisplayName": "connectivity",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-FirewallPolicy",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-FirewallPolicy",
+                "NotScopes": null,
+                "Parameters": {
+                  "fwpolicy": {
+                    "value": {
+                      "firewallPolicyName": "contoso-fw-policy-global",
+                      "location": "northeurope",
+                      "ruleGroups": {
+                        "name": "DefaultApplicationRuleCollectionGroup",
+                        "properties": {
+                          "priority": [
+                            300
+                          ],
+                          "rules": [
+                            {
+                              "name": "rule-collection-01",
+                              "priority": 100,
+                              "ruleType": "FirewallPolicyFilterRule",
+                              "action": {
+                                "type": "Allow"
+                              },
+                              "ruleConditions": [
+                                {
+                                  "name": "allow-internet",
+                                  "protocols": [
+                                    {
+                                      "protocolType": "http",
+                                      "port": 80
+                                    },
+                                    {
+                                      "protocolType": "https",
+                                      "port": 443
+                                    }
+                                  ],
+                                  "sourceAddresses": [
+                                    "*"
+                                  ],
+                                  "targetFqdns": [
+                                    "*"
+                                  ],
+                                  "fqdnTags": [],
+                                  "ruleConditionType": "ApplicationRuleCondition"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "fwPolicyRegion": {
+                    "value": "northeurope"
+                  },
+                  "rgName": {
+                    "value": "contoso-fw-policies"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-vHUB-NCUS",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vHUB-NCUS",
+                "NotScopes": null,
+                "Parameters": {
+                  "azfw": {
+                    "value": {}
+                  },
+                  "ergw": {
+                    "value": {
+                      "autoScaleConfiguration": {
+                        "bounds": {
+                          "max": [
+                            1
+                          ],
+                          "min": [
+                            1
+                          ]
+                        }
+                      },
+                      "name": "contoso-ergw-ncus"
+                    }
+                  },
+                  "rgName": {
+                    "value": "contoso-global-vwan"
+                  },
+                  "vHUB": {
+                    "value": {
+                      "addressPrefix": "10.3.0.0/16",
+                      "location": "northcentralus"
+                    }
+                  },
+                  "vHubName": {
+                    "value": "contoso-vhub-ncus"
+                  },
+                  "vpngw": {
+                    "value": {
+                      "bgpSettings": {
+                        "asn": [
+                          65515
+                        ]
+                      },
+                      "name": "contoso-vpngw-ncus",
+                      "vpnGatewayScaleUnit": [
+                        1
+                      ]
+                    }
+                  },
+                  "vwanname": {
+                    "value": "contoso-vwan"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-vHUB-NEU",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vHUB-NEU",
+                "NotScopes": null,
+                "Parameters": {
+                  "azfw": {
+                    "value": {}
+                  },
+                  "ergw": {
+                    "value": {
+                      "autoScaleConfiguration": {
+                        "bounds": {
+                          "max": [
+                            1
+                          ],
+                          "min": [
+                            1
+                          ]
+                        }
+                      },
+                      "name": "contoso-ergw-neu"
+                    }
+                  },
+                  "rgName": {
+                    "value": "contoso-global-vwan"
+                  },
+                  "vHUB": {
+                    "value": {
+                      "addressPrefix": "10.1.0.0/16",
+                      "location": "northeurope"
+                    }
+                  },
+                  "vHubName": {
+                    "value": "contoso-vhub-neu"
+                  },
+                  "vpngw": {
+                    "value": {
+                      "bgpSettings": {
+                        "asn": [
+                          65515
+                        ]
+                      },
+                      "name": "contoso-vpngw-neu",
+                      "vpnGatewayScaleUnit": [
+                        1
+                      ]
+                    }
+                  },
+                  "vwanname": {
+                    "value": "contoso-vwan"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-vHUB-WEU",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vHUB-WEU",
+                "NotScopes": null,
+                "Parameters": {
+                  "azfw": {
+                    "value": {}
+                  },
+                  "ergw": {
+                    "value": {
+                      "autoScaleConfiguration": {
+                        "bounds": {
+                          "max": [
+                            1
+                          ],
+                          "min": [
+                            1
+                          ]
+                        }
+                      },
+                      "name": "contoso-ergw-weu"
+                    }
+                  },
+                  "rgName": {
+                    "value": "contoso-global-vwan"
+                  },
+                  "vHUB": {
+                    "value": {
+                      "addressPrefix": "10.2.0.0/16",
+                      "location": "westeurope"
+                    }
+                  },
+                  "vHubName": {
+                    "value": "contoso-vhub-weu"
+                  },
+                  "vpngw": {
+                    "value": {
+                      "bgpSettings": {
+                        "asn": [
+                          65515
+                        ]
+                      },
+                      "name": "contoso-vpngw-weu",
+                      "vpnGatewayScaleUnit": [
+                        1
+                      ]
+                    }
+                  },
+                  "vwanname": {
+                    "value": "contoso-vwan"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-VWAN",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vWAN",
+                "NotScopes": null,
+                "Parameters": {
+                  "rgName": {
+                    "value": "contoso-global-vwan"
+                  },
+                  "vwanname": {
+                    "value": "contoso-vwan"
+                  },
+                  "vwanRegion": {
+                    "value": "northeurope"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/dafa636f-6f18-4ea5-ae58-39278b6fca05",
+              "Name": "dafa636f-6f18-4ea5-ae58-39278b6fca05",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/34a50443-a844-4e72-90ad-eeb4cd8e2b0c",
+              "Name": "34a50443-a844-4e72-90ad-eeb4cd8e2b0c",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "0cd9c3b7-c12a-4d71-a6dc-9dca2e26516b",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/770702c2-b511-4027-b2d5-0c5a14c5ba3b",
+              "Name": "770702c2-b511-4027-b2d5-0c5a14c5ba3b",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "200e8f6d-dca1-4c1a-b180-8bcf8a45cbdf",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/5031b220-cd5f-4ff3-a0ce-9111621d5010",
+              "Name": "5031b220-cd5f-4ff3-a0ce-9111621d5010",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "22c06546-cc6a-41e9-a0c1-3b46e96c07c4",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/3c874b52-43eb-4eae-878e-67c27e73f992",
+              "Name": "3c874b52-43eb-4eae-878e-67c27e73f992",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "2c25a680-5943-4cf3-abbd-999be5a9c8b8",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/f1257a1e-54d1-442a-943f-cb494f332add",
+              "Name": "f1257a1e-54d1-442a-943f-cb494f332add",
+              "properties": {
+                "DisplayName": "Deploy-vHUB-NEU",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "3814c37f-d8fa-442e-92fc-fc69b2cc5fe8",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/3c8fb6d8-9c08-4f77-9859-67362187ba20",
+              "Name": "3c8fb6d8-9c08-4f77-9859-67362187ba20",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "3cccc537-e101-41a3-a12c-bc843cf4d727",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/c5b3c60b-1850-4149-9134-2b0634d72732",
+              "Name": "c5b3c60b-1850-4149-9134-2b0634d72732",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "3e581b6f-7afe-44ff-a4f1-085cff99957b",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/cd261b26-2541-402a-97d9-932238d89425",
+              "Name": "cd261b26-2541-402a-97d9-932238d89425",
+              "properties": {
+                "DisplayName": "Deploy-vHUB-NCUS",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "6c709e2c-a59c-4e12-8fce-b36f0e36c3b3",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/cd261b26-2541-402a-97d9-932238d89419",
+              "Name": "cd261b26-2541-402a-97d9-932238d89419",
+              "properties": {
+                "DisplayName": "Deploy-vHUB-WEU",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "726c253c-921e-4090-bc5e-c16741f5aae9",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/1033f8a0-59e5-4d02-b051-63e6f859fad1",
+              "Name": "1033f8a0-59e5-4d02-b051-63e6f859fad1",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "7ce7b21c-0131-4243-821f-89fea086d60b",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/5072bf13-12f1-425e-8f13-4fff483f2c84",
+              "Name": "5072bf13-12f1-425e-8f13-4fff483f2c84",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "7e7b567e-3d94-400f-8d7b-f2ee4bcfd164",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/97988b5b-a5e0-47df-9396-1efb47280103",
+              "Name": "97988b5b-a5e0-47df-9396-1efb47280103",
+              "properties": {
+                "DisplayName": "Deploy-VWAN",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "80404d36-7af1-493c-bad8-8fa6defe63b2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/63eeaa6e-4e0f-4d2e-9725-9a5bc40cceb9",
+              "Name": "63eeaa6e-4e0f-4d2e-9725-9a5bc40cceb9",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "88150e44-0759-4aca-b69c-f7385c6f0a88",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/369b14bd-f105-4edc-b5a2-ac43b10070c7",
+              "Name": "369b14bd-f105-4edc-b5a2-ac43b10070c7",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "aa21c20d-64b5-4c02-b957-a5529ad714a0",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/0a00d690-2ce3-4cfd-9f4c-23766177a386",
+              "Name": "0a00d690-2ce3-4cfd-9f4c-23766177a386",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "c5bdd194-8aef-4e00-b2d8-bade7235baf3",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/121ae431-6662-4d0f-8d94-b6cf5f407600",
+              "Name": "121ae431-6662-4d0f-8d94-b6cf5f407600",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ca7970f0-45d1-4266-b779-6d1f3eacf2b7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/5ac28baa-f0de-4b3c-9d0d-c5fb704f8b2a",
+              "Name": "5ac28baa-f0de-4b3c-9d0d-c5fb704f8b2a",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "cc7d2edc-86ce-472e-bab2-b6aa97d0f76d",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/1b230e3e-6584-451c-9422-8f13f6bc3388",
+              "Name": "1b230e3e-6584-451c-9422-8f13f6bc3388",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ea54ebfb-23db-4feb-a5a7-53d653e5b771",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/0bdfac1b-1541-42c9-a998-d636da7141ea",
+              "Name": "0bdfac1b-1541-42c9-a998-d636da7141ea",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "ea6992f0-e7db-4ca0-9220-e1fbc4170e23",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/99c2838f-a548-4884-a6e2-38c1f8fb4c0b/providers/Microsoft.Authorization/roleAssignments/c89d3804-81eb-4a0d-914b-4e1488482b09",
+              "Name": "c89d3804-81eb-4a0d-914b-4e1488482b09",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "eb3c33e1-bbef-4b2b-a264-100ffb52d8c4",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

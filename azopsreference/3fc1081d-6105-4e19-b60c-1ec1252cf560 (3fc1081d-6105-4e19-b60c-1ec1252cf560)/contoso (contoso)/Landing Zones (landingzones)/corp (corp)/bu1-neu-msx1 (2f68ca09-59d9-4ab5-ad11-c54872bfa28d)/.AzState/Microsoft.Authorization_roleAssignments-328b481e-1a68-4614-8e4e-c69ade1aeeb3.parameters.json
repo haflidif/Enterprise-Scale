@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/328b481e-1a68-4614-8e4e-c69ade1aeeb3",
+        "Name": "328b481e-1a68-4614-8e4e-c69ade1aeeb3",
+        "properties": {
+          "DisplayName": "Espen Brandt-Kjelsen",
+          "ObjectType": "User",
+          "PrincipalId": "7e25ef45-1e05-46bc-8cfa-a47a2616fdbd",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

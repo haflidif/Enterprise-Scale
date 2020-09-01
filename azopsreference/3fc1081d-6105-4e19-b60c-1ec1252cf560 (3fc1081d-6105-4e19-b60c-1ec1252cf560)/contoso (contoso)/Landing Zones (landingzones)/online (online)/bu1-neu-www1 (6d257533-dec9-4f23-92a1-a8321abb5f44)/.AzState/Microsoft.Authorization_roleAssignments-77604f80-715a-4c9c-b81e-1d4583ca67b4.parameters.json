@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/6d257533-dec9-4f23-92a1-a8321abb5f44/providers/Microsoft.Authorization/roleAssignments/77604f80-715a-4c9c-b81e-1d4583ca67b4",
+        "Name": "77604f80-715a-4c9c-b81e-1d4583ca67b4",
+        "properties": {
+          "DisplayName": "Xintia Gyenge",
+          "ObjectType": "User",
+          "PrincipalId": "ae058b38-b4c2-4e07-b739-775fd900c5b6",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

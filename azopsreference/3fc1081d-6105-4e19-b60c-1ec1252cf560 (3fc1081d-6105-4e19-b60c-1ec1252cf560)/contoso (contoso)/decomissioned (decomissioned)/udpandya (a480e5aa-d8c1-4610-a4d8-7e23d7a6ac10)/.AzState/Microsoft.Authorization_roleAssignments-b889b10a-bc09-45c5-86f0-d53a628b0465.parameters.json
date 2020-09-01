@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/b889b10a-bc09-45c5-86f0-d53a628b0465",
+        "Name": "b889b10a-bc09-45c5-86f0-d53a628b0465",
+        "properties": {
+          "DisplayName": "Vipul Dudani",
+          "ObjectType": "User",
+          "PrincipalId": "5c2bbe48-1fc1-4710-a452-3baaad1b2b7f",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+          "RoleDefinitionName": "Reader"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

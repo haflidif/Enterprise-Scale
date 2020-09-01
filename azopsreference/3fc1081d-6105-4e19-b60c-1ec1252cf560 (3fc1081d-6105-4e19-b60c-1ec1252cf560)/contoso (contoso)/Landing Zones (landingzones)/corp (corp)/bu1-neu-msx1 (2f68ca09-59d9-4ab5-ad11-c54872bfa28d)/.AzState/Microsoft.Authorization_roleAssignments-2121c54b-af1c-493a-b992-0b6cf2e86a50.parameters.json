@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/2121c54b-af1c-493a-b992-0b6cf2e86a50",
+        "Name": "2121c54b-af1c-493a-b992-0b6cf2e86a50",
+        "properties": {
+          "DisplayName": "uday.pandya@microsoft.com",
+          "ObjectType": "User",
+          "PrincipalId": "a8a6e6dd-da4d-4b74-bdfd-cc1b4d48bf13",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

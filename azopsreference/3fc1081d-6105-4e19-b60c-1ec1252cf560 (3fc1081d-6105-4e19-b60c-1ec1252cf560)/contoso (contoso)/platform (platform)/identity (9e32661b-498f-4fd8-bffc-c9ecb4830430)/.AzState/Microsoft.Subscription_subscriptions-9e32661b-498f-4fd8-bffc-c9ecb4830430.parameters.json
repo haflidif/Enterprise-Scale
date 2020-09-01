@@ -1,0 +1,78 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/9e32661b-498f-4fd8-bffc-c9ecb4830430",
+        "Name": "9e32661b-498f-4fd8-bffc-c9ecb4830430",
+        "DisplayName": "identity",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: 9e32661b-498f-4fd8-bffc-c9ecb4830430)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-vNet-Identity",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vNet-Identity",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/9e32661b-498f-4fd8-bffc-c9ecb4830430/providers/Microsoft.Authorization/roleAssignments/d284da2b-d816-439f-8c36-68e598c040db",
+              "Name": "d284da2b-d816-439f-8c36-68e598c040db",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/9e32661b-498f-4fd8-bffc-c9ecb4830430/providers/Microsoft.Authorization/roleAssignments/e401da50-38b0-4fe8-b9ee-08816926b00e",
+              "Name": "e401da50-38b0-4fe8-b9ee-08816926b00e",
+              "properties": {
+                "DisplayName": "Deploy-vNet-Identity",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "8a4eef23-0bb0-4eaf-962e-f9d2e20a53c5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

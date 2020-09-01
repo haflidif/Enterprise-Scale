@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/5961ceef-9c2a-c9e2-d119-05bb7b6bebd9",
+        "Name": "5961ceef-9c2a-c9e2-d119-05bb7b6bebd9",
+        "properties": {
+          "DisplayName": null,
+          "ObjectType": "Unknown",
+          "PrincipalId": "ad648448-5913-4779-8a0b-4336fbcd3291",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+          "RoleDefinitionName": "SQL Security Manager"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

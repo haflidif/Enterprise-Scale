@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/1f0ee893-efe7-cf52-09d9-70a036dc7d0c",
+        "Name": "1f0ee893-efe7-cf52-09d9-70a036dc7d0c",
+        "properties": {
+          "DisplayName": null,
+          "ObjectType": "Unknown",
+          "PrincipalId": "8bf49d23-d187-4424-b821-06bb25aad6e8",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+          "RoleDefinitionName": "Virtual Machine Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

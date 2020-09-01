@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/7ed15c05-65b7-4a69-b749-e4fd38115034",
+        "Name": "7ed15c05-65b7-4a69-b749-e4fd38115034",
+        "properties": {
+          "DisplayName": "Marvin Buss",
+          "ObjectType": "User",
+          "PrincipalId": "e078cd6f-1054-41da-93a2-2e08f5f94902",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+          "RoleDefinitionName": "User Access Administrator"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

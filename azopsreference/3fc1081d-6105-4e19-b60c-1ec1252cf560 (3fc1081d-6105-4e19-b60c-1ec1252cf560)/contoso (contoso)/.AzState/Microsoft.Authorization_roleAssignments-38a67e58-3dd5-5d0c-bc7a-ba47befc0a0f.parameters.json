@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/38a67e58-3dd5-5d0c-bc7a-ba47befc0a0f",
+        "Name": "38a67e58-3dd5-5d0c-bc7a-ba47befc0a0f",
+        "properties": {
+          "DisplayName": "Deploy-Diag-LogAnalytics",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "1c416181-9b25-4f5c-b2ac-c022f32b547f",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

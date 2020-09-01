@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/9650a417-447f-44d8-aeb1-6e02c325cd74/providers/Microsoft.Authorization/roleAssignments/645e80b2-7cc3-41d7-a290-f04bb6401e88",
+        "Name": "645e80b2-7cc3-41d7-a290-f04bb6401e88",
+        "properties": {
+          "DisplayName": "Callum Coffin",
+          "ObjectType": "User",
+          "PrincipalId": "92f6232d-8ccc-4c97-b9ec-a93cd5f1b9bd",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

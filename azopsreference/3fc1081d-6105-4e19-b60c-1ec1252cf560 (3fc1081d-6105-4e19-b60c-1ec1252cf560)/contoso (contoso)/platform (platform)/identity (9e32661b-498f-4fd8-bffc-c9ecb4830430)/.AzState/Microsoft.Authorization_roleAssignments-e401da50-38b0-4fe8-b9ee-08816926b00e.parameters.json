@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/9e32661b-498f-4fd8-bffc-c9ecb4830430/providers/Microsoft.Authorization/roleAssignments/e401da50-38b0-4fe8-b9ee-08816926b00e",
+        "Name": "e401da50-38b0-4fe8-b9ee-08816926b00e",
+        "properties": {
+          "DisplayName": "Deploy-vNet-Identity",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "8a4eef23-0bb0-4eaf-962e-f9d2e20a53c5",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

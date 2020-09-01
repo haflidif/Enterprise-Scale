@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/366222a8-ea67-4032-8b3e-05baec02612b",
+        "Name": "366222a8-ea67-4032-8b3e-05baec02612b",
+        "properties": {
+          "DisplayName": "ljtill",
+          "ObjectType": "User",
+          "PrincipalId": "a0792f0e-4857-4d12-a3b9-a6246069fcb7",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+          "RoleDefinitionName": "Reader"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

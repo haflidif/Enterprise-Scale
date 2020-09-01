@@ -1,0 +1,86 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d",
+        "Name": "2f68ca09-59d9-4ab5-ad11-c54872bfa28d",
+        "DisplayName": "bu1-neu-msx1",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: 2f68ca09-59d9-4ab5-ad11-c54872bfa28d)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/f389d86a-47e3-401a-a408-f035c2af7d33",
+              "Name": "f389d86a-47e3-401a-a408-f035c2af7d33",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/2121c54b-af1c-493a-b992-0b6cf2e86a50",
+              "Name": "2121c54b-af1c-493a-b992-0b6cf2e86a50",
+              "properties": {
+                "DisplayName": "uday.pandya@microsoft.com",
+                "ObjectType": "User",
+                "PrincipalId": "a8a6e6dd-da4d-4b74-bdfd-cc1b4d48bf13",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/328b481e-1a68-4614-8e4e-c69ade1aeeb3",
+              "Name": "328b481e-1a68-4614-8e4e-c69ade1aeeb3",
+              "properties": {
+                "DisplayName": "Espen Brandt-Kjelsen",
+                "ObjectType": "User",
+                "PrincipalId": "7e25ef45-1e05-46bc-8cfa-a47a2616fdbd",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/2f68ca09-59d9-4ab5-ad11-c54872bfa28d/providers/Microsoft.Authorization/roleAssignments/73be8c43-55d5-4568-8a31-af306513e38d",
+              "Name": "73be8c43-55d5-4568-8a31-af306513e38d",
+              "properties": {
+                "DisplayName": "Xintia Gyenge",
+                "ObjectType": "User",
+                "PrincipalId": "ae058b38-b4c2-4e07-b739-775fd900c5b6",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

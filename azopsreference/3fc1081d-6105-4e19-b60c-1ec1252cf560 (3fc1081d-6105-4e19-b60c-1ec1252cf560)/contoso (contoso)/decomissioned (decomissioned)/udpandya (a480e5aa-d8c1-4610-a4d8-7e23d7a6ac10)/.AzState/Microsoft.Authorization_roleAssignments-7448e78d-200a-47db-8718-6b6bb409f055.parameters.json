@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/7448e78d-200a-47db-8718-6b6bb409f055",
+        "Name": "7448e78d-200a-47db-8718-6b6bb409f055",
+        "properties": {
+          "DisplayName": "udpandya-openshift-csyou",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "b5417865-01f4-456e-b9d5-976ebe550232",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

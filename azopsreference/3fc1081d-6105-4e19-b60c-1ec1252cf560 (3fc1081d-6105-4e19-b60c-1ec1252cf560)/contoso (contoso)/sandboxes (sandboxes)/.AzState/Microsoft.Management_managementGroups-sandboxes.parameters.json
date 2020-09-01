@@ -1,0 +1,85 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/sandboxes",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "sandboxes",
+        "TenantId": "3fc1081d-6105-4e19-b60c-1ec1252cf560",
+        "DisplayName": "sandboxes",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/contoso",
+        "ParentName": "contoso",
+        "ParentDisplayName": "contoso",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/9650a417-447f-44d8-aeb1-6e02c325cd74",
+            "Name": "9650a417-447f-44d8-aeb1-6e02c325cd74",
+            "DisplayName": "victorar",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/sandboxes/providers/Microsoft.Authorization/roleAssignments/ce1c9165-ad38-4c13-a39d-d7a4418aeaf4",
+              "Name": "ce1c9165-ad38-4c13-a39d-d7a4418aeaf4",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/sandboxes/providers/Microsoft.Authorization/roleAssignments/8e5b7d9f-ccaa-4b1f-bd0b-38f03e3da196",
+              "Name": "8e5b7d9f-ccaa-4b1f-bd0b-38f03e3da196",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "0cd9c3b7-c12a-4d71-a6dc-9dca2e26516b",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/sandboxes/providers/Microsoft.Authorization/roleAssignments/d82f9811-b356-4038-8a90-d95365a9d020",
+              "Name": "d82f9811-b356-4038-8a90-d95365a9d020",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "2c25a680-5943-4cf3-abbd-999be5a9c8b8",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/sandboxes/providers/Microsoft.Authorization/roleAssignments/9be77da3-3f24-4b32-bcef-5b4238bfadda",
+              "Name": "9be77da3-3f24-4b32-bcef-5b4238bfadda",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "eb3c33e1-bbef-4b2b-a264-100ffb52d8c4",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

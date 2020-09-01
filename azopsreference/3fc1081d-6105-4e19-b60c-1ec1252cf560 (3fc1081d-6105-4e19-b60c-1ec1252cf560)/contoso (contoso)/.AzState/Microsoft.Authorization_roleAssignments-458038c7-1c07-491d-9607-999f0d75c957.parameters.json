@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/458038c7-1c07-491d-9607-999f0d75c957",
+        "Name": "458038c7-1c07-491d-9607-999f0d75c957",
+        "properties": {
+          "DisplayName": "Cristian Edwards Sabathe",
+          "ObjectType": "User",
+          "PrincipalId": "a9539e9e-ec27-431c-8b8f-79ee8f538842",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+          "RoleDefinitionName": "Reader"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

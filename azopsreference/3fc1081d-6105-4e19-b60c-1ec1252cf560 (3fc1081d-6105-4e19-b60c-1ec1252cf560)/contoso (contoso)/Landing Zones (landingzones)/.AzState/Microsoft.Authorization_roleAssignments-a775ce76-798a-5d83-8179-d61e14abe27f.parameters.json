@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/roleAssignments/a775ce76-798a-5d83-8179-d61e14abe27f",
+        "Name": "a775ce76-798a-5d83-8179-d61e14abe27f",
+        "properties": {
+          "DisplayName": "Deploy-vNet",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "35cbdef9-bc47-4284-ba5f-d803a5f1053b",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

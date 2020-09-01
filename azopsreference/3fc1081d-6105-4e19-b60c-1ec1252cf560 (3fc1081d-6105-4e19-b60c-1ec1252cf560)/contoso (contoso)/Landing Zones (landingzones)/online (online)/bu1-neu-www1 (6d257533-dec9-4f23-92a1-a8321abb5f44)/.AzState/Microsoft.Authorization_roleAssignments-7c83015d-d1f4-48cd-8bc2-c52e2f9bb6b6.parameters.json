@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/6d257533-dec9-4f23-92a1-a8321abb5f44/providers/Microsoft.Authorization/roleAssignments/7c83015d-d1f4-48cd-8bc2-c52e2f9bb6b6",
+        "Name": "7c83015d-d1f4-48cd-8bc2-c52e2f9bb6b6",
+        "properties": {
+          "DisplayName": "MS-PIM",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+          "RoleDefinitionName": "User Access Administrator"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

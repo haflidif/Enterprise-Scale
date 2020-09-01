@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/1e7ed008-296a-3872-4513-2e586c59a0cb",
+        "Name": "1e7ed008-296a-3872-4513-2e586c59a0cb",
+        "properties": {
+          "DisplayName": null,
+          "ObjectType": "Unknown",
+          "PrincipalId": "ad648448-5913-4779-8a0b-4336fbcd3291",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab",
+          "RoleDefinitionName": "Storage Account Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

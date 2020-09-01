@@ -21,7 +21,9 @@
                 "ruleGroups": {
                   "name": "DefaultApplicationRuleCollectionGroup",
                   "properties": {
-                    "priority": 300,
+                    "priority": [
+                      300
+                    ],
                     "rules": [
                       {
                         "name": "rule-collection-01",

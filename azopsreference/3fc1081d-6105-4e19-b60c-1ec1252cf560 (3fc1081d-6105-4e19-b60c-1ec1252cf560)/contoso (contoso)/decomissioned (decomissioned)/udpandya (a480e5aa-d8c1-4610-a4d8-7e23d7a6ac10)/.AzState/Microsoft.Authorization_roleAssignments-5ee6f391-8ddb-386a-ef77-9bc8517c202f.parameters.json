@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/5ee6f391-8ddb-386a-ef77-9bc8517c202f",
+        "Name": "5ee6f391-8ddb-386a-ef77-9bc8517c202f",
+        "properties": {
+          "DisplayName": null,
+          "ObjectType": "Unknown",
+          "PrincipalId": "c7830724-9cd4-4311-a7f5-0bf106d7a8ab",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/fb1c8493-542b-48eb-b624-b4c8fea62acd",
+          "RoleDefinitionName": "Security Admin"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

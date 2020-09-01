@@ -1,0 +1,62 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/9650a417-447f-44d8-aeb1-6e02c325cd74",
+        "Name": "9650a417-447f-44d8-aeb1-6e02c325cd74",
+        "DisplayName": "victorar",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: 9650a417-447f-44d8-aeb1-6e02c325cd74)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/9650a417-447f-44d8-aeb1-6e02c325cd74/providers/Microsoft.Authorization/roleAssignments/863a09d1-5126-43a8-a691-902111a4b012",
+              "Name": "863a09d1-5126-43a8-a691-902111a4b012",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/9650a417-447f-44d8-aeb1-6e02c325cd74/providers/Microsoft.Authorization/roleAssignments/645e80b2-7cc3-41d7-a290-f04bb6401e88",
+              "Name": "645e80b2-7cc3-41d7-a290-f04bb6401e88",
+              "properties": {
+                "DisplayName": "Callum Coffin",
+                "ObjectType": "User",
+                "PrincipalId": "92f6232d-8ccc-4c97-b9ec-a93cd5f1b9bd",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

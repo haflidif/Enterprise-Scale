@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/59c53abe-cbce-465c-af87-9386b3aef880",
+        "Name": "59c53abe-cbce-465c-af87-9386b3aef880",
+        "properties": {
+          "DisplayName": "sub-udpandya-gitops",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "1588850a-f76a-4488-8cd6-558d59c9d3a6",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

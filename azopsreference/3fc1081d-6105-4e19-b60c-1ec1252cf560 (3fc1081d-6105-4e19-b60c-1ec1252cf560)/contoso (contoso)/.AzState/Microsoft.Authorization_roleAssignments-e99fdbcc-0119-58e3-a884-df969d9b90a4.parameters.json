@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/e99fdbcc-0119-58e3-a884-df969d9b90a4",
+        "Name": "e99fdbcc-0119-58e3-a884-df969d9b90a4",
+        "properties": {
+          "DisplayName": "Deploy-ASC-CE",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "5a554118-872c-42b1-9bdd-bf45fbf23fed",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

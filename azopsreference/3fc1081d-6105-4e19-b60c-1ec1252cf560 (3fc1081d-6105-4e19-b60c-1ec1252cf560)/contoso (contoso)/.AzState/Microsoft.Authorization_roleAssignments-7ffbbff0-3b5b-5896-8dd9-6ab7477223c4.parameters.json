@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/roleAssignments/7ffbbff0-3b5b-5896-8dd9-6ab7477223c4",
+        "Name": "7ffbbff0-3b5b-5896-8dd9-6ab7477223c4",
+        "properties": {
+          "DisplayName": "Deploy-VM-Monitoring",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "e04b29aa-80fc-4e98-b361-fff6b62d6668",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/a480e5aa-d8c1-4610-a4d8-7e23d7a6ac10/providers/Microsoft.Authorization/roleAssignments/ace05ecd-e473-4e45-aa2d-f53f87957057",
+        "Name": "ace05ecd-e473-4e45-aa2d-f53f87957057",
+        "properties": {
+          "DisplayName": "cluster-onboarding-spn-2020-02-11-18-04-55",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "f94d5a67-c0ed-460c-949c-b2d2a1111402",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/34e09817-6cbe-4d01-b1a2-e0eac5743d41",
+          "RoleDefinitionName": "Kubernetes Cluster - Azure Arc Onboarding"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

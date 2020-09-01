@@ -1,0 +1,139 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3",
+        "Name": "feab2d15-66b4-438b-accf-51f889b30ec3",
+        "DisplayName": "management",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-LA-Config",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-LA-Config",
+                "NotScopes": null,
+                "Parameters": {
+                  "workspaceName": {
+                    "value": "contoso-weu-la"
+                  },
+                  "workspaceRegion": {
+                    "value": "westeurope"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            },
+            {
+              "Identity": {
+                "type": "SystemAssigned"
+              },
+              "Location": "northeurope",
+              "Name": "Deploy-Log-Analytics",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-LogAnalytics",
+                "NotScopes": null,
+                "Parameters": {
+                  "automationAccountName": {
+                    "value": "contoso-weu-aa"
+                  },
+                  "automationRegion": {
+                    "value": "westeurope"
+                  },
+                  "rgName": {
+                    "value": "contoso-weu-mgmt"
+                  },
+                  "workspaceName": {
+                    "value": "contoso-weu-la"
+                  },
+                  "workspaceRegion": {
+                    "value": "westeurope"
+                  }
+                },
+                "PolicyDefinitionId": "<replace-me>",
+                "Scope": "<replace-me>"
+              },
+              "ResourceType": "Microsoft.Authorization/policyAssignments"
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3/providers/Microsoft.Authorization/roleAssignments/37b9f0a0-e451-4bd5-a5ca-6b0e4e6ef941",
+              "Name": "37b9f0a0-e451-4bd5-a5ca-6b0e4e6ef941",
+              "properties": {
+                "DisplayName": "MS-PIM",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "fbebcb52-9901-4f2d-b50f-55a39432d159",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                "RoleDefinitionName": "User Access Administrator"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3/providers/Microsoft.Authorization/roleAssignments/222f95bb-6c2e-45a1-bfa8-6dd4464fc863",
+              "Name": "222f95bb-6c2e-45a1-bfa8-6dd4464fc863",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "75c2168f-8a41-427b-b362-5f4c2aa4b981",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3/providers/Microsoft.Authorization/roleAssignments/54a3348a-19e2-4e3e-b7df-83b931e7d755",
+              "Name": "54a3348a-19e2-4e3e-b7df-83b931e7d755",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "b0eaac81-a07c-4519-972f-ecaa337383fe",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3/providers/Microsoft.Authorization/roleAssignments/39659984-0bd6-4b87-8406-b350848a6207",
+              "Name": "39659984-0bd6-4b87-8406-b350848a6207",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "51ac29aa-aa12-431c-b6a7-70fb02e58dba",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/feab2d15-66b4-438b-accf-51f889b30ec3/providers/Microsoft.Authorization/roleAssignments/9528fd8b-fa44-4005-adea-77d4974cd02d",
+              "Name": "9528fd8b-fa44-4005-adea-77d4974cd02d",
+              "properties": {
+                "DisplayName": null,
+                "ObjectType": "Unknown",
+                "PrincipalId": "fb230c85-3132-461d-b719-18c2ab617029",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
